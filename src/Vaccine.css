@@ -1,0 +1,65 @@
+.vaccine__page {
+  display: flex;
+  flex-direction: column;
+}
+
+.vaccine__page__stats {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.vaccineBox {
+  flex: 1;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.vaccineBox__phase {
+  color: #303f9f;
+}
+
+.vaccineBox--selected {
+  border-top: 5px solid #303f9f;
+}
+
+.vaccineBox__noOfCandidate {
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.vaccineBox__noOfCandidate_p0 {
+  color: black;
+}
+
+.vaccineBox__noOfCandidate_p1 {
+  color: #767676;
+}
+
+.vaccineBox__noOfCandidate_p2 {
+  color: #e7b526;
+}
+
+.vaccineBox__noOfCandidate_p3 {
+  color: #97cfbb;
+}
+
+.vaccineBox__noOfCandidate_p4 {
+  color: #306cb2;
+}
+
+.vaccineBox__noOfCandidate_p5 {
+  color: #8ab82e;
+}
+
+.vaccineBox__noOfCandidate_p6 {
+  color: #3a9a50;
+}
+
+.vaccineBox:not(:last-child) {
+  margin-right: 15px;
+}
+
+.vaccine__page__details {
+}

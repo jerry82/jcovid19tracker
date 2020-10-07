@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #f5f6fa;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.covid__page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.covid__page__header {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 5px;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.covid__page__dropdown {
+  background-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.covid__page__header .covid__page__header__countryInfo {
+  display: flex;
+  flex-direction: row;
+}
+
+.covid__page__header
+  .covid__page__header__countryInfo
+  .covid__page__header__countryInfo__flag {
+  height: 30px;
+  width: 45px;
+  background-size: cover;
+  border-radius: 3px;
+}
+
+.covid__page__header .covid__page__header__countryInfo > h4 {
+  color: #00809d;
+  font-size: 1.4rem;
+  margin-right: 10px;
+}
+
+.covid__page__left {
+  flex: 0.9;
+  margin-right: 10px;
+}
+
+.covid__page__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.covid__page__right .MuiCardContent-root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.covid__page__stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.covid__page_graphTitle {
+  margin-top: 20px;
+}
+
+.graph-container {
+  height: 600px;
+}
+
+.covid__page__graph {
+  flex-grow: 1;
+}
+
+.vaccine__page {
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.vaccine__page__stats {
+  justify-content: space-between;
+}
+
+.about__page {
+  display: flex;
+  /* justify-content: center; */
+  padding: 20px;
+}
+
+.about__page__content {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.about__page__content h1 {
+  font: 18px/1.9em "librebaskerville-regular", serif;
+  margin: 0 auto;
+  color: #3f51b5;
+}
+
+@media (max-width: 990px) {
+  .covid__page {
+    flex-direction: column;
   }
 }
